@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<body>
+
+    {% if skin_type == "Dry" %}
+    <h2 class="text-center mt-4 mb-3 text-primary">🌸 Skin Routine for Dry Skin</h2>
+    <div class="container mt-4">
+        <!--AM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌞 Morning (AM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Gentle Hydrating Cleanser:</strong> Cleans without stripping natural oils (e.g. cream or
+                        non-foaming cleanser).</li>
+                    <li><strong> Hydrating Toner (Optional):</strong> Toners help add moisture and prep skin.
+                        Alcohol-free
+                        toners with ingredients like glycerin or hyaluronic acid are good for dry skin</li>
+                    <li><strong>Moisturizer:</strong> Rich, hydrating moisturizer with ceramides and hyaluronic acid .
+                    </li>
+                    <li><strong>Sunscreen (SPF 30+):</strong> Hydrating, daily sunscreen to protect and maintain
+                        moisture.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--PM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌙 Evening (PM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Makeup Remover/Cleansing Oil (if needed):</strong> Removes makeup or sunscreen gently.
+                    </li>
+                    <li><strong>Gentle Hydrating Cleanser:</strong> Same as morning cleanser to clean skin without
+                        drying.
+                    </li>
+                    <li><strong> Serum (Optional) :</strong> Hydrating serum with hyaluronic acid before moisturizer for
+                        extra hydration.</li>
+                    <li><strong>Moisturizer:</strong> Generous application of a rich moisturizer to lock in hydration
+                        overnight.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🗓️ Weekly Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Exfoliation (1x/week):</strong> Use gentle scrub or chemical exfoliant (AHA) to remove
+                        flaky
+                        dead skin (skip if irritation occurs).</li>
+                    <li><strong>Hydrating Mask (1-2x/week):</strong> Moisture-boosting mask with ceramides or hyaluronic
+                        acid.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="alert alert-info shadow-sm">
+            <h5 class="mb-3"><strong>💡 Key Tips for Sensitive Skin</strong></h5>
+            <ul>
+                <li>Avoid hot water while cleansing.</li>
+                <li>Apply moisturizer on damp skin to lock in hydration</li>
+                <li>Avoid harsh scrubs and alcohol-based toners.</li>
+                <li>Maintain consistent hydration by drinking water.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    {% endif %}
+
+    {% if skin_type == "Oily" %}
+    <h2 class="text-center mt-4 mb-3 text-primary">🌸 Skin Routine for Oily Skin</h2>
+    <div class="container mt-4">
+        <!--AM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌞 Morning (AM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Gentle Foaming Cleanser:</strong> Removes excess oil without over-drying ( eg: salicylic
+                        acid or niacinamide-based cleansers.)</li>
+                    <li><strong> Hydrating Toner :</strong> Alcohol-free toners with ingredients like niacinamide to
+                        balance oil </li>
+                    <li><strong> Lightweight Moisturizer:</strong> Use a gel-based, oil-free moisturizer to hydrate
+                        without clogging pores. .</li>
+                    <li><strong>Sunscreen (SPF 30+):</strong> Choose an oil-free, non-comedogenic sunscreen, preferably
+                        with a matte finish.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--PM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌙 Evening (PM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Makeup Remover/Cleansing Oil (if needed):</strong> Removes makeup or sunscreen gently.
+                    </li>
+                    <li><strong>Gentle Foaming Cleanser:</strong> Same as morning cleanser to clean skin without
+                        over-drying.</li>
+                    <li><strong> Serum (Optional) :</strong> Niacinamide serum or salicylic acid for acne-prone skin
+                    </li>
+                    <li><strong>Moisturizer:</strong> Gel-based to maintain hydration overnight.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🗓️ Weekly Routine</h4>
+            </div>
+            <div class="card-body">
+                <li><strong>Exfoliation (1x/week):</strong> Gentle BHA exfoliation to unclog pores</li>
+                <li><strong>Clay Mask (1-2x/week):</strong>Helps absorb excess oil and reduce shine.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tips Section -->
+        <div class="alert alert-info shadow-sm">
+            <h5 class="mb-3"><strong>💡 Key Tips for Sensitive Skin</strong></h5>
+            <ul>
+                <li> Avoid harsh scrubs and over-cleansing to prevent rebound oil. </li>
+                <li>Stay hydrated, as dehydration can increase oil production.</li>
+                <li>Use blotting papers during the day if needed..</li>
+                <li>Clean pillowcases regularly..</li>
+            </ul>
+        </div>
+    </div>
+
+    {% endif %}
+
+    {% if skin_type == "Normal" %}
+    <h2 class="text-center mt-4 mb-3 text-primary">🌸 Skin Routine for Normal Skin</h2>
+    <div class="container mt-4">
+        <!--AM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌞 Morning (AM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Gentle Cleanser:</strong> Cream or Gel cleanser to removes overnight impurities without
+                        stripping skin.</li>
+                    <li><strong> Hydrating Toner (Optional):</strong> Alcohol-free toners with ingredients like
+                        niacinamide to balance oil </li>
+                    <li><strong> Serum (Optional):</strong> Hyaluronic acid for hydration or Vitamin C for antioxidant
+                        protection. </li>
+                    <li><strong> Lightweight Moisturizer:</strong>Hydrates without heaviness, maintaining natural skin
+                        balance. </li>
+                    <li><strong>Sunscreen (SPF 30+):</strong> Broad-spectrum sunscreen daily to prevent sun damage.</li>
+                </ul>
+            </div>
+        </div>
+        <!--PM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌙 Evening (PM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Makeup Remover/Cleansing Oil (if needed):</strong> Removes makeup or sunscreen gently.
+                    </li>
+                    <li><strong>Gentle Cleanser:</strong> Same as morning cleanser to clean skin .</li>
+                    <li> <strong>Toner (optional)</strong> Alcohol-free toner to prepare skin for treatment.</li>
+                    <li><strong> Serum (Optional) :</strong> Retinol (if needed) or hydrating serum for maintenance.
+                    </li>
+                    <li><strong>Moisturizer:</strong> A slightly richer moisturizer to support overnight repair.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🗓️ Weekly Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Exfoliation (1x/week):</strong> Gentle exfoliant to remove dead skin cells and maintain
+                        glow.</li>
+                    <li><strong>Hydrating or Brightening Mask (1-2x/week):</strong>For an extra hydration boost or
+                        brightness.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Tips Section -->
+        <div class="alert alert-info shadow-sm">
+            <h5 class="mb-3"><strong>💡 Key Tips for Sensitive Skin</strong></h5>
+            <ul>
+                <li> Maintain hydration and protect with sunscreen. </li>
+                <li>Avoid harsh scrubs or products that disrupt balance..</li>
+                <li>Adjust routine based on weather (lighter in summer, richer in winter).</li>
+                <li>Stay consistent to maintain healthy skin.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    {% endif %}
+
+    {% if skin_type == "Combination" %}
+    <h2 class="text-center mt-4 mb-3 text-primary">🌸 Skin Routine for Combination Skin</h2>
+    <div class="container mt-4">
+        <!--AM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌞 Morning (AM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Gentle Cleanser:</strong> Removes excess oil while maintaining moisture (gel or foaming
+                        cleanser recommended).</li>
+                    <li><strong> Toner :</strong> Alcohol-free, balancing toner to prep skin.</li>
+                    <li><strong>Serum (Optional):</strong> Hyaluronic acid for hydration or Vitamin C for brightness.
+                    </li>
+                    <li><strong> Lightweight Moisturizer:</strong> Oil-free moisturizer focusing on dry areas as needed.
+                    </li>
+                    <li><strong>Sunscreen (SPF 30+):</strong> Broad-spectrum sunscreen to protect skin daily.</li>
+                </ul>
+            </div>
+        </div>
+        <!--PM ROUTINE-->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌙 Evening (PM) Routine</h4>
+            </div>
+            <div class="card-body">
+
+                <ul>
+                    <li><strong>Makeup Remover/Cleansing Oil (if needed):</strong> Removes makeup or sunscreen gently.
+                    </li>
+                    <li><strong>Gentle Cleanser:</strong> Same as morning cleanser to clean skin without over-drying.
+                    </li>
+                    <li><strong> Toner :</strong> Alcohol-free, balancing toner to prep skin.</li>
+                    <li><strong> Serum (Optional) :</strong> Retinol for anti-aging or niacinamide to control oil in the
+                        T-zone.</li>
+                    <li><strong>Moisturizer:</strong> Lightweight moisturizer, applying slightly more on drier areas.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🗓️ Weekly Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Exfoliation (1x/week):</strong> Gentle exfoliation to clear pores in oily areas while
+                        avoiding irritation on dry areas.</li>
+                    <li><strong>Clay Mask (1-2x/week):</strong>Apply clay masks on the T-zone to control oil while using
+                        hydrating masks on dry areas if needed (multi-masking).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="alert alert-info shadow-sm">
+            <h5 class="mb-3"><strong>💡 Key Tips for Sensitive Skin</strong></h5>
+            <ul>
+                <li> Balance is key: manage oil in T-zone and hydrate dry areas. </li>
+                <li>Avoid harsh cleansers that over-dry the skin.</li>
+                <li>Adjust moisturizer amounts based on dryness in specific areas.</li>
+                <li>Consistent sunscreen use is essential.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    {% endif %}
+
+
+    {% if skin_type == "Sensitive" %}
+    <h2 class="text-center mt-4 mb-3 text-primary">🌸 Skin Routine for Sensitive Skin</h2>
+
+    <div class="container mt-4">
+
+        <!-- AM Routine -->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌞 Morning (AM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Gentle, Fragrance-Free Cleanser:</strong> Hydrating, non-foaming cleanser to prevent
+                        irritation.</li>
+                    <li><strong>Toner:</strong> Alcohol-free, soothing toner with calming ingredients (like aloe or
+                        chamomile).</li>
+                    <li><strong>Serum (Optional):</strong> Hydrating serum with hyaluronic acid or niacinamide if
+                        tolerated.</li>
+                    <li><strong>Fragrance-Free Moisturizer:</strong> Hydrates and protects the skin barrier.</li>
+                    <li><strong>Sunscreen (SPF 30+):</strong> Mineral sunscreen (zinc oxide/titanium dioxide) preferred
+                        for sensitive skin.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PM Routine -->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🌙 Evening (PM) Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Makeup Remover/Cleansing Oil (if needed):</strong> Gentle, fragrance-free makeup
+                        remover.</li>
+                    <li><strong>Gentle Cleanser:</strong> Same as morning cleanser.</li>
+                    <li><strong>Toner:</strong> Alcohol-free toner with soothing ingredients.</li>
+                    <li><strong>Serum (Optional):</strong> Hydrating serum if tolerated; avoid strong actives unless
+                        advised.</li>
+                    <li><strong>Fragrance-Free Moisturizer:</strong> Lock in hydration and restore the skin barrier.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Weekly Routine -->
+        <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-light">
+                <h4 class="mb-0 text-primary">🗓️ Weekly Routine</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Exfoliation (rare/1x/week):</strong> Very gentle exfoliant like lactic acid or enzymes,
+                        if tolerated.</li>
+                    <li><strong>Hydrating Mask (optional):</strong> Calming, fragrance-free masks to soothe irritation.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="alert alert-info shadow-sm">
+            <h5 class="mb-3"><strong>💡 Key Tips for Sensitive Skin</strong></h5>
+            <ul>
+                <li>Patch test new products before full use.</li>
+                <li>Avoid products with fragrance, alcohol, and harsh exfoliants.</li>
+                <li>Keep the routine simple and minimal.</li>
+                <li>Stay consistent to support long-term skin health.</li>
+            </ul>
+        </div>
+
+    </div>
+    {% endif %}
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
